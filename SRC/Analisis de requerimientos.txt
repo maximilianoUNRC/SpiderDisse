@@ -1,0 +1,26 @@
+*******************************************************************************************
+Análisis de requerimientos:
+
+1) Comandar 12 servo-motores de 5 volts CC.
+2) Monitoreo de voltaje de batería. (Uso de bateria LIPO)
+3) Monitoreo de Navegación (giroscopo, acelerometro, magnetometro). (I2C)
+4) Alarma sonora mediante buzzer. (Estado critico de batería)
+5) Comando remoto (radio enlace) del robot mediante interfaz-web.
+   6) Proveer al sistema de conexión inalambrica mediante pcie wifi y antenas desmontables.
+ 
+7) Interfaz de manejo/comando  en android (posibilidad de tener secuencias pre grabadas de comandos) --> se esta armando un curso de Android basico que puede servir de interfaz
+   8) Plataforma de visualización de posición, estados, etc. de los robot.
+   9) Posibilidad de agregar camara con trasnmisiòn de video al control y uso para la deteccion de obstaculos conjuntamente con sensor de ultrasonido.
+   
+   
+    
+*******************************************************************************************
+Conceptos aplicados en la implementacion Hard-Soft:
+
+1) PWM y GPIO.
+2) Divisor de tensión y lecturas Analógicas.
+3) Física aplicada al movimiento , Protocolo I2C, tipos de baterías.
+
+4) Escritura digital, GPIO.
+5) Sockets , modelo cliente-servidor en python.
+6) Protocolos de transmisión de datos.
