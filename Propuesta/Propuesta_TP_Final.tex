@@ -15,7 +15,7 @@
 \usepackage{anysize} 
 \marginsize{3cm}{2cm}{2cm}{2cm} 
 %\renewcommand{\shorthandsspanish}{}
-\title{\textbf{Propuesta De Trabajo Final del Posgrado\bigskip \\Diplomatura en Sistemas Embebidos} \bigskip \\Sistema Embebido de control y monitoreo\bigskip \\Desarrollo basado en Intel Galileo G1: Spider-Bot}
+\title{\textbf{Propuesta De Trabajo Final del Posgrado\bigskip \\Diplomatura en Sistemas Embebidos} \bigskip \\ Robot Autónomo Móvil\bigskip \\Desarrollo basado en Intel Galileo G1: Spider-Bot}
 
 \author{Galfioni, Dario Adrian y Correa, Carlos Maximiliano}
 \date{Mayo de 2016}
@@ -26,7 +26,7 @@
 
 \rhead{\bfseries Propuesta De Trabajo Final - DISSE 2016} %cabecera a la derecha
 \lhead{ } %cabecera a la iz
-\lfoot{Galfioni, Adrián Darío y Correa, Carlos Maximiliano }
+\lfoot{Galfioni- Correa }
 \cfoot{ } 
 \cfoot{\thepage} %numero pagina abajo a la derecha
 \renewcommand{\headrulewidth}{0.4pt} %espesor linea cabecera
@@ -80,97 +80,75 @@
 \newpage
 % -------------------------------------------------------------------------------------
 \section{Marco contextual}
-	
-La tecnología de sensores ha evolucionado rápidamente, asimilando características de los sistemas embebidos hasta el punto de proporcionar dispositivos que difícilmente pueden diferenciarse de los nodos computacionales,  incorporando capacidades cognitivas y de comunicación con las que llegan a establecer verdaderas redes semánticas de información. 
+En un contexto mundial donde la tecnología avanza a pasos agigantados y se inserta en todos los
+ámbitos de la sociedad, desde hogares y escuelas hasta medios de comunicación, industrias y
+organizaciones de toda índole, es imperativo adaptarse y acompañar el crecimiento intentando
+anticipar los fenómenos de cambio. En muchos casos la introducción de nuevas tecnologías en
+algunos de estos ámbitos es sinónimo de progreso y ventaja competitiva .En el
+sector industrial, podemos destacar a la Robótica como una de las principales disciplinas tecnológicas potencialmente aplicables al sector, en pos de su evolución y la búsqueda
+del aumento de los niveles de eficiencia en la productividad. \par
+La Robótica es una disciplina que busca desarrollar unidades electrónicas y mecánicas destinadas a
+llevar a cabo un conjunto de tareas de manera automatizada, precisa y controlada. La Robótica
+Autónoma particularmente, es una sub-disciplina de la Robótica convencional enfocada en dotar al
+robot de un cierto nivel de inteligencia que le permita desempeñarse sin intervención humana.
+Un Robot autónomo se compone de una estructura electrónica-mecánica [Azcurra et al, 2011]
+basada en sensores y actuadores y una placa base con un Sistema Embebido encargado de
+gestionarlos. Un Sistema Embebido [Heath Steve, 2003], a diferencia de un sistema tradicional
+como puede ser el que posee una computadora personal y cuyo objetivo es cubrir un rango amplio
+de necesidades, se construye para cubrir un conjunto de necesidades especificas y opera en un
+sistema computacional dedicado. La clave de los robots autónomos se encuentra en la inteligencia
+que presenta este Sistema Embebido, la cual le permite, mediante el análisis de las señales
+obtenidas del entorno, planificar su accionar en pos de alcanzar los objetivos planteados durante su
+diseño y concepción. Si a un robot autónomo se le incorporara dentro del conjunto de actuadores,
+un sistema mecánico de desplazamiento controlado, estaríamos en presencia de un sistema
+denominado Robot Autónomo Móvil.\par
+Este trabajo se sitúa en el marco de un Trabajo Final de la Diplomatura en Sistemas embebidos por lo cual focalizaremos el estudio de los Robots Autónomos Móviles en su Sistema Embebido (SE) de control y Monitoreo por sobre su sistema mecánico.
 
 \section{Motivación}
+Los avances tecnológicos a nivel mundial y la gran demanda de estos en todos los sectores hace que existan tanto en el mercado nacional como internacional, numerosos desarrollos de hardware -muchos de ellos open-source o de libre utilización- asequibles y potencialmente utilizables en robótica autónoma móvil [Azcurra et al, 2011]. Esto permite a las industrias acceder de manera
+directa a la posibilidad de insertar tecnología en sus procesos productivos, mas allá de cuales sean sus dimensiones y su capacidad adquisitiva.\par
+Es claro que además de contar con la tecnología adecuada, es importante la intervención de profesionales informáticos tanto en el desarrollo e implementación de soluciones adecuadas a los requerimientos del agente-robotico como en la generación del conocimiento requerido para lograrlo, es decir, la elaboración de metodologías, modelos de procesos, estándares, técnicas y procedimientos que permitan garantizar la conclusión exitosa y controlada de los proyectos generados asegurando niveles de calidad, seguridad, eficiencia y eficacia adecuados.\par
 
 \section{Propuesta y objetivos}
 
-La central agrometeorológica se construirá a partir de dispositivos de características open hardware como Arduino dado la posibilidad de desarrollar un circuito propio que se adapte a las necesidades y características particulares de medición de variables que se determinen. Además, se utilizará un módulo que dotará a la unidad desarrollada de una conexión inalámbrica utilizando protocolo IEEE 802.15.4, IEEE 802.11n o comunicación gprs según la ubicación de la central, brindando la posibilidad de armar una red, de bajo consumo de los nodos.    
-
-Identificar y seleccionar un set de indicadores agrometeorológicos.
-
-Desarrollar una estación de sensado de variables agrometeorológicas con capacidades de detección de fallas en campo que permitan articular mecanismos de tolerancia a fallas para centralizar la información en un servidor para visualizar, procesar y poder obtener estadísticas de los datos obtenidos.
+\begin{itemize}
+\item Conocer y evaluar tecnologías actuales para la implementación de sistemas embebidos (SE).
+\item  Desarrollar aplicaciones embebidas empleando técnicas de programación específicas para lograr eficiencia, confiabilidad y reusabilidad, ante limitaciones que frecuentemente se presentan en proyectos reales.
+\item Analizar las características los Sistemas Operativos más usados en Sistemas Embebidos.
+\item  Escoger la tecnología adecuada dependiendo del problema.
+\item Producir la documentación del proceso de desarrollo y la documentación técnica del producto.
+\item Aplicar e integrar los saberes obtenidos en la carrera.
+\end{itemize}
 
 
 \section{Plan de Trabajo}
 
 \subsection{Análisis de Requerimientos}
-	\begin{itemize}
-		\item Estudio de Variables a medir
-		\item Relación y dependencia de las variables
-\end{itemize}
+
 
 \subsection{Hardware (Etapa de Captura)}
-	\begin{itemize}
-		\item Elección de sensores aptos para la zona
-		\item Análisis de Comunicación con sensores (Uso de librerías de prueba)
-		\item Descripción del Proceso de desarrollo de la placa que nuclea a los sensores
-		\item Análisis y desarrollo de la interfaz de comunicación con sensores	
-\end{itemize}	      
+      
 
 \subsection{Software (Etapa de captura)}
-	\begin{itemize}
-		\item Implementación del sketch Operativo de la Interfaz de Senores	
-	\end{itemize}
+
 
 \subsection{Hardware (Etapa de Captura y Monitoreo)}
-	\begin{itemize}
-		\item Desarrollo del sistema de comunicación con la interfaz de sensores
-		\item Análisis y Diseño de derivación de señales hacia actuadores externos ( reles, etc)
-		\item Análisis y Diseño de Comunicación Remota con la Central.
-		\item Descripción del Proceso de Desarrollo de la placa madre.
-		\item Implementación de la placa madre.
-    \end{itemize}
+
 
 
 \subsection{Software (Etapa de Actuación y Monitoreo)}
-	\begin{itemize}
-		\item Implementación del sketch Operativo Principal
-	\end{itemize}
+
 
 
 \subsection{Software (Desarrollo de interfaz Cliente)}
-	\begin{itemize}
-		\item Análisis y diseño de usabilidad (Modo de mostrar la información captada)
-		\item Implementación y prueba
-	\end{itemize}
 
-\subsection{Test completo}
-	\begin{itemize}
-    	\item Comunicación Cliente-Servidor
-		\item Refactorización según usuario si es necesario
-	\end{itemize}
+
+\subsection{Test de Integracion}
+
 
 \subsection{Desarrollo de Informes}
 
 
-\section{Cronograma de actividades (semanal)}
-
-\begin{center}
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-Semana & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11  \\
-\hline
-3.1 & $\bullet$ & $\bullet$  &   &   &   &   &   &   &   &   &   \\
-\hline
-3.2 &   & $\bullet$ & $\bullet$ & $\bullet$ &  &  &  &   &   &   &   \\
-\hline
-3.3 &   &   & $\bullet$  & $\bullet$  & $\bullet$  &   &   &  &  &  & \\
-\hline
-3.4 &   &   &   & $\bullet$  & $\bullet$  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & &  \\
-\hline
-3.5 &   &   &   & $\bullet$  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & &   \\
-\hline
-3.6 &   &   &   &   &   &  &  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$  \\
-\hline
-3.7 &   &   &   &   &   &  &  &  & $\bullet$ & $\bullet$ & $\bullet$  \\
-\hline
-3.8 & $\bullet$   & $\bullet$  & $\bullet$  & $\bullet$  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$  \\
-\hline
-\end{tabular}
-\end{center}
 
 \vspace*{4cm}
 
@@ -180,7 +158,7 @@ Semana & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11  \\
 \begin{tiny} ................................................................. \end{tiny} &
 \begin{tiny} ................................................................. \end{tiny} \\
 
-\textit{Tutor Externo} & \textit{Turor Interno  }& \textit{Alumno }\\
+\textit{Tutor UNRC} & \textit{Turor GSTR }& \textit{Alumnos}\\
 
 \end{tabular}
 \end{center}
