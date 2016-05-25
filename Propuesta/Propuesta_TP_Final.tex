@@ -1,0 +1,194 @@
+
+\documentclass[10pt,a4paper,final]{article}
+%----------------------------------- Paquetes para comenzar en Latin ------------------------------------
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{listings}
+%----------------------------------- Paquetes extras ------------------------------------
+\usepackage{graphicx} % graficos
+\usepackage{cite} % para contraer referencias
+\usepackage{float}
+\usepackage{multirow} % para las tablas
+\usepackage[hidelinks]{hyperref} 
+\usepackage{anysize} 
+\marginsize{3cm}{2cm}{2cm}{2cm} 
+%\renewcommand{\shorthandsspanish}{}
+\title{\textbf{Propuesta De Trabajo Final del Posgrado\bigskip \\Diplomatura en Sistemas Embebidos} \bigskip \\Sistema Embebido de control y monitoreo\bigskip \\Desarrollo basado en Intel Galileo G1: Spider-Bot}
+
+\author{Galfioni, Dario Adrian y Correa, Carlos Maximiliano}
+\date{Mayo de 2016}
+
+% cabecera y pie
+\usepackage{fancyhdr} % activamos el paquete
+\pagestyle{fancy} % seleccionamos un estilo
+
+\rhead{\bfseries Propuesta De Trabajo} %cabecera a la derecha
+\lhead{ } %cabecera a la iz
+\lfoot{Galfioni, Dario Adrian y Correa, Carlos Maximiliano}
+\cfoot{ } 
+\cfoot{\thepage} %numero pagina abajo a la derecha
+\renewcommand{\headrulewidth}{0.4pt} %espesor linea cabecera
+\renewcommand{\footrulewidth}{0.4pt} %espesor linea pie 
+
+\begin{document}
+
+\maketitle{}
+
+\vspace*{2cm}
+\large{
+	\noindent\textit{Lugar de Realización:} \textbf{Grupo de Sistemas de Tiempo Real - GSTR} \\
+	\noindent\textit{Tutor por UNRC:} \textbf{Ing. Damian Primo} \\
+	\noindent\textit{Tutor por GSTR:} \textbf{Ing. Martin Marcos} \\ }
+
+\newpage
+% -------------------------------------------------------------------------------------
+
+\section*{Datos}
+\subsection*{Sobre la práctica profesional}
+	\begin{itemize}
+		\item Título: Desarrollo e Implementación de Central Agrometeorológica
+		\item Empresa: Cooperativa de Trabajo Informática y Telecomunicaciones 10 Ltda
+		\item Periodo de realización: 2 Nov. 2015 - 15 Ene. 2016
+		\item Jornada laboral: 6 hs diarias
+		\item Horas totales: 310
+	\end{itemize}
+
+\subsection*{Estudiante}
+\begin{itemize}
+	\item Nombre: Jeremias Arfenoni
+	\item DNI: 35.545.228
+	\item Carrera: Ingeniería en Telecomunicaciones
+	\item Correo: jeremias.arfenoni@gmail.com
+	\item Celular: 0358-155611669
+\end{itemize}
+
+\subsection*{Tutor por la FI-UNRC}
+\begin{itemize}
+	\item Nombre: Guillermo Andrés Magallán
+	\item DNI: 26.610.738
+\end{itemize}
+
+\subsection*{Empresa}
+\begin{itemize}
+	\item Nombre: Cooperativa de Trabajo Informática y Telecomunicaciones 10 Ltda
+	\item Dirección: Mitre 746
+	\item Tel: 0358-154858000
+\end{itemize}
+
+\subsection*{Tutor en la empresa}
+\begin{itemize}
+	\item Nombre: Daniel Anunziata
+	\item DNI: 28.785.582
+	\item Cargo: Presidente
+	\item danunziata@it10coop.com.ar
+\end{itemize}
+
+\newpage
+% -------------------------------------------------------------------------------------
+\section{Introducción}
+	
+La tecnología de sensores ha evolucionado rápidamente, asimilando características de los sistemas embebidos hasta el punto de proporcionar dispositivos que difícilmente pueden diferenciarse de los nodos computacionales,  incorporando capacidades cognitivas y de comunicación con las que llegan a establecer verdaderas redes semánticas de información. 
+
+\section{Objetivos}
+
+La central agrometeorológica se construirá a partir de dispositivos de características open hardware como Arduino dado la posibilidad de desarrollar un circuito propio que se adapte a las necesidades y características particulares de medición de variables que se determinen. Además, se utilizará un módulo que dotará a la unidad desarrollada de una conexión inalámbrica utilizando protocolo IEEE 802.15.4, IEEE 802.11n o comunicación gprs según la ubicación de la central, brindando la posibilidad de armar una red, de bajo consumo de los nodos.    
+
+Identificar y seleccionar un set de indicadores agrometeorológicos.
+
+Desarrollar una estación de sensado de variables agrometeorológicas con capacidades de detección de fallas en campo que permitan articular mecanismos de tolerancia a fallas para centralizar la información en un servidor para visualizar, procesar y poder obtener estadísticas de los datos obtenidos.
+
+
+\section{Plan de Trabajo}
+
+\subsection{Análisis de Requerimientos}
+	\begin{itemize}
+		\item Estudio de Variables a medir
+		\item Relación y dependencia de las variables
+\end{itemize}
+
+\subsection{Hardware (Etapa de Captura)}
+	\begin{itemize}
+		\item Elección de sensores aptos para la zona
+		\item Análisis de Comunicación con sensores (Uso de librerías de prueba)
+		\item Descripción del Proceso de desarrollo de la placa que nuclea a los sensores
+		\item Análisis y desarrollo de la interfaz de comunicación con sensores	
+\end{itemize}	      
+
+\subsection{Software (Etapa de captura)}
+	\begin{itemize}
+		\item Implementación del sketch Operativo de la Interfaz de Senores	
+	\end{itemize}
+
+\subsection{Hardware (Etapa de Captura y Monitoreo)}
+	\begin{itemize}
+		\item Desarrollo del sistema de comunicación con la interfaz de sensores
+		\item Análisis y Diseño de derivación de señales hacia actuadores externos ( reles, etc)
+		\item Análisis y Diseño de Comunicación Remota con la Central.
+		\item Descripción del Proceso de Desarrollo de la placa madre.
+		\item Implementación de la placa madre.
+    \end{itemize}
+
+
+\subsection{Software (Etapa de Actuación y Monitoreo)}
+	\begin{itemize}
+		\item Implementación del sketch Operativo Principal
+	\end{itemize}
+
+
+\subsection{Software (Desarrollo de interfaz Cliente)}
+	\begin{itemize}
+		\item Análisis y diseño de usabilidad (Modo de mostrar la información captada)
+		\item Implementación y prueba
+	\end{itemize}
+
+\subsection{Test completo}
+	\begin{itemize}
+    	\item Comunicación Cliente-Servidor
+		\item Refactorización según usuario si es necesario
+	\end{itemize}
+
+\subsection{Desarrollo de Informes}
+
+
+\section{Cronograma de actividades (semanal)}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Semana & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11  \\
+\hline
+3.1 & $\bullet$ & $\bullet$  &   &   &   &   &   &   &   &   &   \\
+\hline
+3.2 &   & $\bullet$ & $\bullet$ & $\bullet$ &  &  &  &   &   &   &   \\
+\hline
+3.3 &   &   & $\bullet$  & $\bullet$  & $\bullet$  &   &   &  &  &  & \\
+\hline
+3.4 &   &   &   & $\bullet$  & $\bullet$  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & &  \\
+\hline
+3.5 &   &   &   & $\bullet$  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & &   \\
+\hline
+3.6 &   &   &   &   &   &  &  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$  \\
+\hline
+3.7 &   &   &   &   &   &  &  &  & $\bullet$ & $\bullet$ & $\bullet$  \\
+\hline
+3.8 & $\bullet$   & $\bullet$  & $\bullet$  & $\bullet$  & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$  \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace*{4cm}
+
+\begin{center}
+\begin{tabular}{c c c}
+\begin{tiny} ................................................................. \end{tiny} & 
+\begin{tiny} ................................................................. \end{tiny} &
+\begin{tiny} ................................................................. \end{tiny} \\
+
+\textit{Tutor Externo} & \textit{Turor Interno  }& \textit{Alumno }\\
+
+\end{tabular}
+\end{center}
+
+\end{document}
