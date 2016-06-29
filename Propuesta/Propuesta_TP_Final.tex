@@ -15,7 +15,7 @@
 \usepackage{anysize} 
 \marginsize{3cm}{2cm}{2cm}{2cm} 
 %\renewcommand{\shorthandsspanish}{}
-\title{\textbf{Propuesta De Trabajo Final del Posgrado\bigskip \\Diplomatura en Sistemas Embebidos} \bigskip \\ Robot Autónomo Móvil\bigskip \\Desarrollo basado en Intel Galileo G1: Spider-Bot}
+\title{\textbf{Propuesta De Trabajo Final del Posgrado\bigskip \\Diplomatura en Sistemas Embebidos} \bigskip \\ Sistema de Monitoreo y Control de un Robot Autónomo móvil. \bigskip \\Desarrollo basado en Intel Galileo G1}
 
 \author{Galfioni, Dario Adrian y Correa, Carlos Maximiliano}
 \date{Mayo de 2016}
@@ -39,8 +39,7 @@
 \vspace*{2cm}
 \large{
 	\noindent\textit{Lugar de Realización:} \textbf{Grupo de Sistemas de Tiempo Real - GSTR} \\
-	\noindent\textit{Tutor por UNRC:} \textbf{Ing. Damian Primo} \\
-	\noindent\textit{Tutor por GSTR:} \textbf{Ing. Martin Marcos} \\ }
+	\noindent\textit{Tutor por UNRC:} \textbf{Ing. Damian Primo} \\ }
 
 \newpage
 % -------------------------------------------------------------------------------------
@@ -68,14 +67,9 @@
 \subsection*{Tutor por la FI-UNRC}
 \begin{itemize}
 	\item Nombre: Primo, Damian
-	\item DNI: 00.000.000
+	\item DNI: 29.877.385
 \end{itemize}
 
-\subsection*{Tutor en el GSTR}
-\begin{itemize}
-	\item Nombre: Marcos, Martin
-	\item DNI: 00.000.000
-\end{itemize}
 
 \newpage
 % -------------------------------------------------------------------------------------
@@ -108,13 +102,20 @@ Los avances tecnológicos a nivel mundial y la gran demanda de estos en todos los
 directa a la posibilidad de insertar tecnología en sus procesos productivos, mas allá de cuales sean sus dimensiones y su capacidad adquisitiva.\par
 Es claro que además de contar con la tecnología adecuada, es importante la intervención de profesionales informáticos tanto en el desarrollo e implementación de soluciones adecuadas a los requerimientos del agente-robotico como en la generación del conocimiento requerido para lograrlo, es decir, la elaboración de metodologías, modelos de procesos, estándares, técnicas y procedimientos que permitan garantizar la conclusión exitosa y controlada de los proyectos generados asegurando niveles de calidad, seguridad, eficiencia y eficacia adecuados.\par
 
-\section{Propuesta y objetivos}
+\section{Propuesta}
+Nuestro proyecto consiste en la realización de un sistema de monitoreo y  control de los estados de un Robot Autónomo Móvil,  referentes a su funcionamiento interno (ram,  batería, etc)  y a las variables de su entorno adquiridas mediante diferentes sensores provistos para procesar y generar decisiones en forma autónoma. \par 
+Bajo lo anteriormente citado, se propone el diseño de un mecanismo mecatrónico más específicamente el exoesqueleto de una araña con 3 ejes de libertad controlado por una placa base Intel Galileo G1 y su respectivo sistema embebido.
+El mismo será capaz de sensar diferentes parámetros asociados a su entorno (GPS, giroscopio,  acelerómetro,  magnetómetro y sensor de ultrasonido), pudiendo  ser monitoreados en forma remota mediante un protocolo basado en mensaje  (implementación MQTT - RabbitMQ).\par
+Se plantea que en base a los diferentes sensores  con el que cuenta el Robot,  tenga la capacidad de evadir objetos u obstáculos que obstruyan su trayectoria. \par   
+Por último,  se aclara que el sistema, por cuestiones de seguridad contará con un modo de control remoto asistido por el usuario. \par
+
+\subsection{Objetivos Específicos}
 
 \begin{itemize}
 \item Conocer y evaluar tecnologías actuales para la implementación de sistemas embebidos (SE).
 \item  Desarrollar aplicaciones embebidas empleando técnicas de programación específicas para lograr eficiencia, confiabilidad y reusabilidad, ante limitaciones que frecuentemente se presentan en proyectos reales.
 \item Analizar las características los Sistemas Operativos más usados en Sistemas Embebidos.
-\item  Escoger la tecnología adecuada dependiendo del problema.
+\item Escoger la tecnología adecuada dependiendo del problema.
 \item Producir la documentación del proceso de desarrollo y la documentación técnica del producto.
 \item Aplicar e integrar los saberes obtenidos en la carrera.
 \end{itemize}
