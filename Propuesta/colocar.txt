@@ -1,0 +1,27 @@
+\section{Plan de Trabajo}
+
+\subsection{Análisis de Requerimientos}
+
+
+\subsection{Hardware (Etapa de Captura)}
+      
+
+\subsection{Software (Etapa de captura)}
+
+
+\subsection{Hardware (Etapa de Captura y Monitoreo)}
+
+
+
+\subsection{Software (Etapa de Actuación y Monitoreo)}
+
+
+
+\subsection{Software (Desarrollo de interfaz Cliente)}
+
+
+\subsection{Test de Integracion}
+
+
+\subsection{Desarrollo de Informes}
+
